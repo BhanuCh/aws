@@ -65,15 +65,8 @@
 				]
 			}
 		}
-
-		
 	},
 	"Outputs": {
-
-"InstanceIPAddress" : {
-      "Description" : "IP address of the newly created EC2 instance",
-      "Value" : { "Ref" : "myEipforEc2" }
-    }
 		
 	}
 }
