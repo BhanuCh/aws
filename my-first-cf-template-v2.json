@@ -1,0 +1,26 @@
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+"Resources" : {
+    "mybucket" : {
+       "Type" : "AWS::S3::Bucket",
+       "Properties" : {
+       "BucketName":"my-bucket-bhanu-11112345"
+       }
+       }
+    },
+
+"Outputs" : {
+
+"myBucketArn" : {
+      "Value" : { "Fn::GetAtt" : [ "mybucket", "Arn" ] }
+
+},
+
+"myBucketDomainName" : {
+      "Value" : { "Fn::GetAtt" : [ "mybucket", "DomainName" ] }
+
+}
+
+}
+
+}
